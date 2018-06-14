@@ -57,7 +57,7 @@ class Actions extends Base
      *
      * @return string
      */
-    public static function actions()
+    public static function action()
     {
         return static::randomElement(static::$actions);
     }

@@ -27,7 +27,7 @@ class ActionsTest extends \PHPUnit_Framework_TestCase
      */
     public function testIsString()
     {
-        $actionName = $this->faker->actions();
+        $actionName = $this->faker->action();
 
         $this->assertRegExp('/\p{Han}+/u', $actionName);
     }
