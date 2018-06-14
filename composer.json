@@ -1,0 +1,30 @@
+{
+    "name": "nonegrame/faker-provider-animals",
+    "type": "library",
+    "description": "中文動物 Faker",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "nonegrame"
+        }
+    ],
+    "require": {
+        "php": "^5.3.3|^7.0",
+        "fzaninotto/faker": "^1.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "FakerProviderAnimals\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FakerProviderAnimals\\Test\\": "test/FakerProviderAnimals/"
+        }
+    },
+    "extra": {
+    }
+}
