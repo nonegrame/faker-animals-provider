@@ -4,7 +4,11 @@
 
 動物名稱翻譯使用 google,bing, wiki及本人的破爛英文
 
-# 使用方法
+## 安裝
+
+`composer require nonegrame/faker-provider-animals`
+
+## 使用方法
 
  ```
  $faker = new Faker\Generator();
