@@ -13,7 +13,7 @@
  // 形容動作 faker
  $faker->addProvider(new \FakerProviderAnimals\Actions($faker));
  
- echo $faker->actions() . $faker->animal();
+ echo $faker->action() . $faker->animal();
  ```
  輸出結果`帥氣的加拿大馬鹿`
  
