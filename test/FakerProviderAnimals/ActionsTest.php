@@ -4,31 +4,23 @@ namespace FakerProviderAnimals\Test;
 
 use Faker\Generator;
 use FakerProviderAnimals\Actions;
+use PHPUnit\Framework\TestCase;
 
-class ActionsTest extends \PHPUnit_Framework_TestCase
+class ActionsTest extends TestCase
 {
-    /**
-     * @var Generator
-     */
-    private $faker;
+    private Generator $faker;
 
-    /**
-     * Set up test environment
-     */
-    public function setUp()
+    protected function setUp(): void
     {
         $faker = new Generator();
         $faker->addProvider(new Actions($faker));
         $this->faker = $faker;
     }
 
-    /**
-     * Test if animal name is a string
-     */
-    public function testIsString()
+    public function testIsString(): void
     {
         $actionName = $this->faker->action();
 
-        $this->assertRegExp('/\p{Han}+/u', $actionName);
+        $this->assertMatchesRegularExpression('/\p{Han}+/u', $actionName);
     }
 }
